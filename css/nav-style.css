@@ -16,6 +16,7 @@ nav {
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 nav .wrap-core-nav-list,
@@ -31,7 +32,7 @@ nav .brand {
 }
 
 nav .brand img {
-    width: 100%;
+    width: 50%;
 }
 
 nav .menu li a {
