@@ -37,7 +37,36 @@
     </head>
 
     <body>
-		
+		<!-- Messenger Chat plugin Code -->
+		<div id="fb-root"></div>
+
+		<!-- Your Chat plugin code -->
+		<div id="fb-customer-chat" class="fb-customerchat">
+		</div>
+	
+		<script>
+		  var chatbox = document.getElementById('fb-customer-chat');
+		  chatbox.setAttribute("page_id", "104527792442927");
+		  chatbox.setAttribute("attribution", "biz_inbox");
+		</script>
+	
+		<!-- Your SDK code -->
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  xfbml            : true,
+			  version          : 'v15.0'
+			});
+		  };
+	
+		  (function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));
+		</script>
 		<header>			
 			<nav hidden class="nav-white nav-transparent full-width">
 				<div class="nav-header">
@@ -226,7 +255,7 @@
 					<div class="col-lg-6 col-12">						
                         <div class="ser-bx mb-30">
 							<div class="d-md-flex d-block">
-								<img src="images/5-580x400.jpg" class="img-fluid" alt="" >
+								<img src="images/7-580x400.jpg" class="img-fluid" alt="" >
 								<div class="ser-tx">
 									<h4>Fertility Reflexology</h4>
 									<p><small>We provide reflexology treatments tailored to individual fertility issues. This includes discussion around lifestyle, bespoke reflexology treatment for women suffering from unexplained fertility issues, PCOS, Endometriosis, Recurrent Miscarriage or those on Assisted Fertility Treatments.
@@ -283,10 +312,10 @@
 				<div class="row">
 					<div class="col-lg-6 col-12">
 						<div class="section-heading">
-							<h1 class="heading fs-60 f-w7 theme-color">Section 1.5</h1>
-							<h3>Mid-Section description</h3>
-							<p>Casrolern atur aut oditaut. Donsequentur magnilqui ratione voluptate msequi sesciunentro quisquam estqui dolorem ntrtsquia dolor.</p>
-							<a class="cs-button mt-30" href="#">Learn More</a>
+							<h1 class="heading fs-60 f-w7 theme-color">Gift Cards</h1>
+							<p>Why not treat the one you love to one of Caring Hands Midwife Treatments?  Gift Cards available to purchase from £10-£100.</p>
+							<br>
+							<p>Click our livechat button to get in touch.</p>
 						</div>
 					</div>
 				</div>                
@@ -311,7 +340,6 @@
                             <div class="content-1-info text-center">
                                 <h4 class="text-back f-w6 theme-color">Birth Preparation & Relaxation Course</h4>
                                 <p>This exclusive treatment course includes 3 weekly treatments using Aromatherapy, Massage, Reflex Zone Therapy and Acupressure to support cervical ripening and labour preparation using an individual oil blend for relaxation from 37 weeks gestation.  Oil will be supplied following first treatment to use at home in the bath or for partner massage.</p>
-								<a class="cs-button mt-30" href="#">Learn More</a>
                             </div>
                         </div>
 					</div>
@@ -322,8 +350,11 @@
                             </div>
                             <div class="content-1-info text-center">
                                 <h4 class="text-back f-w6 theme-color">Post-Dates Pregnancy Package</h4><br />
-                                <p>This exclusive treatment course includes 3 weekly treatments using Aromatherapy, Massage, Reflex Zone Therapy and Acupressure to support cervical ripening and labour preparation using an individual oil blend for relaxation from 37 weeks gestation.  Oil will be supplied following first treatment to use at home in the bath or for partner massage.</p>
-								<a class="cs-button mt-30" href="#">Learn More</a>
+                                <p>This exclusive course of treatments is delivered from 40 weeks and ideally spaced 2-3 days apart.  The treatment uses Aromatherapy, Acupressure and Reflex Zone Therapy to encourage cervical ripening and uterine activity to help avoid medical induction of labour.  This treatment package is designed for you and your birthing partner so they can be taught techniques which are continued at home.
+									If you give birth before completion of the course of treatments then a post birth treatment will be offered instead within the first 8 weeks post birth.
+									</p>
+									<br />
+									<a class="cs-button mt-30" href="#consultation">Book A Consultation</a>
                             </div>
                         </div>
 					</div>
@@ -335,46 +366,12 @@
                             <div class="content-1-info text-center">
                                 <h4 class="text-back f-w6 theme-color">Planned Caesarean Section Relaxation Package </h4>
                                 <p>This exclusive treatment package provides you with a combination of a relaxation aromatherapy back, neck, shoulders, arm and hand massage treatment and hypnosis treatment.</p>
-								<a class="cs-button mt-30" href="#">Learn More</a>
-                            </div>
+								
+							</div>
                         </div>
 					</div>
 				</div>
             </div>
-        </section>
-		
-		
-		
-		<section class="section-ptb-0 bg-light">
-			<div class="row align-items-center no-gutter">
-				<div class="col-lg-6 col-12">
-					<div class="px-100 xs-px-20 sm-py-50">
-						<div class="section-heading text-left max-width-650 mb-30">
-							<h2 class="heading">Section 3</h2>
-						</div>
-						<p class="max-width-700 mb-20">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Utas sed enim ad minim veniam, quis nostrud exercitation ipsum ullamco laboris nisi aliquip ex ea commodo consequat duis aute irure.</p>
-						
-						<ul class="list list-hand">
-                            <li> Item 1</li>
-                            <li> Item 2</li>
-                            <li> Item 3</li>
-                            <li> Item 4</li>
-                            <li> Item 5</li>
-                            <li> Item 6</li>
-                            <li> Item 7</li>
-                        </ul>
-						
-						<a class="cs-button x-small mt-30" href="#">Book A Visit</a>
-						
-					</div>
-				</div>
-				<div class="col-lg-6 col-12">
-					<div class="portfolio-item video">
-						<img src="images/video.jpg" class="img-fluid" alt="">
-                        <a class="popup portfolio-img" rel="prettyPhoto[gallery1]" href="https://youtu.be/nl5vUwaHZ8U"><img src="images/play.png" class="img-fluid" alt="" ></a>
-					</div>
-				</div>
-			</div>
         </section>
 		
 		<section class="section-pb-150 pt-80 sm-pb-50 exp-bg" style="background-image: url(images/bg-img4.png); background-position: center bottom;">
@@ -421,7 +418,7 @@
             </div>
         </section>
 		
-		<section class="section-ptb-80">
+		<!-- <section class="section-ptb-80">
             <div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-10">
@@ -548,7 +545,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 		
 		<section id="testimonials" class="section-ptb-80" data-jarallax='{"speed": 0.0}' style="background-image: url(images/about-bg.jpg);">
             <div class="container">
@@ -588,34 +585,6 @@
                 </div>
             </div>
         </section>
-		
-		<section class="section-ptb-80 bg-blue">
-            <div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="section-heading text-center max-width-550 mx-auto">
-							<h2 class="heading">Accreditations</h2>
-							<p>This is a description placeholder for a section description.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-40">
-					<div class="col-12">
-			          	<div class="client clients-border column-1 text-center">
-			             	<ul class="list-unstyled">
-			               	   <li> 
-				                  <img class="img-fluid mx-auto" src="images/logo-1.png" alt="">
-				               </li>
-				               <li> 
-				                  <img class="img-fluid mx-auto" src="images/logo-2.png" alt="">
-				               </li>
-				            </ul>
-			          	</div>
-			        </div>
-
-                </div>
-            </div>
-        </section>
 
 		<section id="about" class="section-ptb-40">
             <div class="container">
@@ -648,95 +617,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="row mt-50">
-                    <div class="col-lg-3 col-md-6 col-12 sm-mb-30">
-                        <div class="team team-round-shadow">
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5><a href="team-single.html"> Dr. Laura Dixon</a></h5>
-                                </div>
-                                <div class="team-contact">
-                                    <p class="fs-12 mb-10"> GYNECOLOGIST </p>
-                                </div>
-								<div class="team-photo">
-									<img class="img-fluid mx-auto" src="images/team/team-0.jpg" alt="">
-								</div>
-                                <div class="social-icons social-border rounded color-hover clearfix">
-                                    <ul>
-                                        <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-lg-3 col-md-6 col-12 sm-mb-30">
-                        <div class="team team-round-shadow">
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5><a href="team-single.html"> Druid Wensleydale</a></h5>
-                                </div>
-                                <div class="team-contact">
-                                    <p class="fs-12 mb-10"> PEDIATRICIAN </p>
-                                </div>
-								<div class="team-photo">
-									<img class="img-fluid mx-auto" src="images/team/team-1.jpg" alt="">
-								</div>
-                                <div class="social-icons social-border rounded color-hover clearfix">
-                                    <ul>
-                                        <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                    
-                    <div class="col-lg-3 col-md-6 col-12 sm-mb-30">
-                        <div class="team team-round-shadow">
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5><a href="team-single.html"> Phillip Anthropy</a></h5>
-                                </div>
-                                <div class="team-contact">
-                                    <p class="fs-12 mb-10"> PEDIATRICIAN </p>
-                                </div>
-								<div class="team-photo">
-									<img class="img-fluid mx-auto" src="images/team/team-2.jpg" alt="">
-								</div>
-                                <div class="social-icons social-border rounded color-hover clearfix">
-                                    <ul>
-                                        <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>               
-                    <div class="col-lg-3 col-md-6 col-12 sm-mb-30">
-                        <div class="team team-round-shadow">
-                            <div class="team-description">
-                                <div class="team-info">
-                                    <h5><a href="team-single.html"> Jack Jameson</a></h5>
-                                </div>
-                                <div class="team-contact">
-                                    <p class="fs-12 mb-10"> GYNECOLOGIST </p>
-                                </div>
-								<div class="team-photo">
-									<img class="img-fluid mx-auto" src="images/team/team-3.jpg" alt="">
-								</div>
-                                <div class="social-icons social-border rounded color-hover clearfix">
-                                    <ul>
-                                        <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -747,59 +627,8 @@
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596552044!2d-74.25986763304465!3d40.69714941412697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1537364999769" class="map" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
-        </section>	
-		
-<!--         <section id="blog" class="section-ptb-80 parallax" data-jarallax='{"speed": 0.1}' style="background-image: url(images/app-bg.jpg);">
-            <div class="container">
-				<div class="row justify-content-end">
-					<div class="col-md-7 col-12">
-						<div class="section-heading">
-							<h2 class="heading">Latest News & Events</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-30 justify-content-end">
-					<div class="col-md-7 col-12">
-                        <div class="blog-bx d-flex mb-30">
-							<div class="data-bx">
-								<h3 class="fs-36 f-w7 mb-0">25</h3>
-								<p>MARCH</p>
-							</div>
-							<div class="cont-bx">
-								<h4 class="fs-18 f-w6 mb-0">Ferasoetayse setraseas aturaus buytase</h4>
-								<p>Cinsquntuagni dolores uiration lertyas voluptat seqse niptaiadkeu voleytaser lasec.</p>
-								<a href="#" class="sr-link">Read More</a>
-							</div>
-						</div>
-                        <div class="blog-bx d-flex mb-30">
-							<div class="data-bx">
-								<h3 class="fs-36 f-w7 mb-0">24</h3>
-								<p>MARCH</p>
-							</div>
-							<div class="cont-bx">
-								<h4 class="fs-18 f-w6 mb-0">Doleuyras kerturaus fuytseas asemigsa</h4>
-								<p>Cinsquntuagni dolores uiration lertyas voluptat seqse niptaiadkeu voleytaser lasec.</p>
-								<a href="#" class="sr-link">Read More</a>
-							</div>
-						</div>
-                        <div class="blog-bx d-flex mb-30">
-							<div class="data-bx">
-								<h3 class="fs-36 f-w7 mb-0">23</h3>
-								<p>MARCH</p>
-							</div>
-							<div class="cont-bx">
-								<h4 class="fs-18 f-w6 mb-0">Setraseas aturaus buytase</h4>
-								<p>Cinsquntuagni dolores uiration lertyas voluptat seqse niptaiadkeu voleytaser lasec.</p>
-								<a href="#" class="sr-link">Read More</a>
-							</div>
-						</div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-				
-			
-		
+        </section>
+					
         <!-- <section class="actionbox2 bg-light">
             <div class="container">
                 <div class="row">
@@ -814,7 +643,7 @@
             </div>
         </section> -->
 
-		<section id="appointment" class="section-ptb-150 xs-pb-40 xs-pt-40 parallax" data-jarallax='{"speed": 0.1}' style="background-image: url(images/about-bg3.jpg);">
+		<section id="consultation" class="section-ptb-150 xs-pb-40 xs-pt-40 parallax" data-jarallax='{"speed": 0.1}' style="background-image: url(images/about-bg3.jpg);">
             <div class="container">
 				<div class="row justify-content-end">
 					<div class="col-md-6 col-12">
@@ -848,7 +677,6 @@
 										<option value="1" >1</option>
 										<option valur="3">2</option>
 										<option value="4">3</option>
-										<option value="5">4</option>
 									</select>
 								</div>
 								<div class="form-field clearfix">
@@ -905,7 +733,7 @@
                                 <p>Location: 123 My Address, BT11 1AB, Coleraine</p>
                             </li>
                             <li><i class="fa fa-phone"></i>
-                                <a href="tel:07512345678"> <span>07512345678 </span> </a>
+                                <a href="tel:07790914420"> <span>07790914420 </span> </a>
                             </li>
                             <li><i class="fa fa-envelope-o"></i>Email: barbara@caringhandsmidwife.com</li>
                         </ul>
@@ -915,10 +743,10 @@
                             <h4 class="mb-30 mt-10 text-uppercase">Quick Link</h4>
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#services">Our Services</a></li>
                                 <li><a href="#packages">Packages</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Appointments</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#consultation">Consultation</a></li>
                             </ul>
                         </div>
                     </div>
@@ -936,17 +764,19 @@
                     </div>
 					<div class="col-lg-4 col-sm-6">
 						<a href="https://www.talismanwebs.co.uk" target="_blank"><img src="images/talismanwebs.png" alt="developed by: Talisman Webs" /></a>
+						<a href="https://www.expectancy.co.uk/" target="_blank"> <img src="images/logo-1.png" alt="endorsement" /> </a>
+						<a href="https://www.expectancy.co.uk/" target="_blank"> <img src="images/logo-2.png" alt="endorsement" /> </a> <p>FEDANT National Registration Number 13491</p>
                     </div>
                 </div>
                 <div class="footer-copyright mt-20">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
-                            <p class="mt-15"> ©Copyright <span id="copyright">2022</span> <a href="#"> Caring Hands Midwife </a> All Rights Reserved | Developed by: <a href="https://www.talismanwebs.com" target="_blank">Talisman Webs</a>. </p>
+                            <p class="mt-15"> ©Copyright <span id="copyright">2022</span> <a href="#"> Caring Hands Midwife </a> All Rights Reserved. </p>
                         </div>
                         <div class="col-lg-6 col-md-6 text-left text-md-right">
                             <div class="social-icons color-hover mt-10">
                                 <ul> 
-                                    <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="social-facebook"><a href="https://www.facebook.com/caringhandsmidwife"><i class="fa fa-facebook"></i></a></li>
                                     <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
                                     <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i> </a></li>
                                     <li class="social-linkedin"><a href="#"><i class="fa fa-linkedin"></i> </a></li>
